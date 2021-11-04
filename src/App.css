@@ -1,4 +1,15 @@
-.App {
+@import url("https://fonts.googleapis.com/css2?family=Fascinate&family=Roboto:wght@100&family=Zen+Maru+Gothic:wght@300&display=swap");
+:root {
+  --primary-white: #fff;
+  --primary-orange: #f9ab00;
+  --primary-dark: rgba(255, 255, 255, 0);
+  --primary-green: rgba(27, 238, 20, 0.938);
+}
+
+body {
+  font-family: "Roboto" sans-serif;
+}
+/* .App {
   text-align: center;
 }
 
@@ -35,4 +46,44 @@
   to {
     transform: rotate(360deg);
   }
+} */
+
+/* navbar  */
+.navbar-nav {
+  margin-left: auto;
+}
+.logo {
+  width: 5.25rem;
+}
+/* Menu links */
+nav a.nav-link {
+  font-size: 0.9rem;
+  font-weight: 500;
+  letter-spacing: 0.0375rem;
+  cursor: pointer;
+}
+
+nav ul li {
+  text-transform: uppercase;
+}
+.navbar-nav > li > a {
+  margin-top: 1rem;
+  margin-left: 0.75rem;
+  color: var(--primary-green) !important;
+  border-top: 0.1875rem solid var(--primary-dark);
+}
+
+.navbar-brand {
+  max-width: 5.25rem;
+  padding: 0 !important;
+  height: 6rem !important;
+}
+
+.navbar-nav > li > a.active,
+.navbar-nav > li > a.active:focus {
+  border-top: 0.1875rem solid var(--primary-orange);
+}
+
+.navbar-nav > li > a:hover {
+  border-top: 0.1875rem solid var(--primary-orange);
 }
